@@ -4,3 +4,5 @@ portfolio = {
     "NVDA": {"shares": 3,  "avg_buy_price": 820.00},
     "AMZN": {"shares": 8,  "avg_buy_price": 155.00},
 }
+def get_portfolio():
+    return portfolio
