@@ -6,7 +6,7 @@ load_dotenv(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file_
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import requests
-from market_agent import get_market_summary
+from agents.market_agent import get_market_summary
 
 import portfolio
 
@@ -31,6 +31,5 @@ def get_advice(ticker, question):
         model="llama-3.3-70b-versatile",
     )
     return chat_completion.choices[0].message.content
-
 
     print(get_advice("TSLA", "Should I sell my TSLA today?"))
