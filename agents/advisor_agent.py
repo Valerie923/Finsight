@@ -32,5 +32,5 @@ def get_advice(ticker, question):
     )
     return chat_completion.choices[0].message.content
 
-if __name__ == "__main__":
+
     print(get_advice("TSLA", "Should I sell my TSLA today?"))
